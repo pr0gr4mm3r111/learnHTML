@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css?v0">
+    
     <title>Úvod</title>
 </head>
 <body>
-    
+    <div class="upper-status-bar">
+        <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
     <div class="row">
         <div class="navbar">
             <ul>
@@ -152,6 +159,10 @@
         })
         document.querySelector("#next-controll").addEventListener("click", function () {
             window.location.href = "./atributes";
+        })
+
+        document.querySelector(".burger").addEventListener("click", () => {
+            document.querySelector(".burger").classList.toogle("active");
         })
     </script>
 </body>
