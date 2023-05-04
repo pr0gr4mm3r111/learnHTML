@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="semi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="index.css?v0">
+    
+    <title>Zoznamy</title>
+</head>
+<body>
+    <div class="upper-status-bar">
+        <div id="burger" class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="navbar">
+            <ul>
+                <li><a href="./">HTML Základy</a></li>
+                <li><a href="./atributes.html">HTML Atribúty</a></li>
+                <li><a href="./headers.html">HTML Nadpisy</a></li>
+                <li><a href="./paragraphs.html">HTML Paragrafy</a></li>
+                <li><a href="./styles.html">HTML Štýly</a></li>
+                <li><a href="./formating.html">HTML Formátovanie</a></li>
+                <li><a href="./comments.html">HTML Komentáre</a></li>
+                <li><a href="./colors.html">HTML Farby</a></li>
+                <li><a href="./css.html">HTML CSS</a></li>
+                <li><a href="./links.html">HTML Linky</a></li>
+                <li><a href="./pictures.html">HTML Obrázky</a></li>
+                <li><a href="./favicons.html">HTML Favicon</a></li>
+                <li><a href="./title.html">HTML Názov Stránky</a></li>
+                <li><a href="./table.html">HTML Tabuľky</a></li>
+                <li><a href="./lists.html">HTML Listy</a></li>
+                <li><a href="./classes.html">HTML Triedy</a></li>
+                <li><a href="./id.html">HTML ID</a></li>
+                <li><a href="./layout.html">HTML Layout</a></li>
+                <li><a href="./entities.html">HTML Entities</a></li>
+                <li><a href="./emojis.html">HTML Emojis</a></li>
+                <li><a href="./forms1.html">HTML Formuláre 1</a></li>
+                <li><a href="./forms2.html">HTML Formuláre 2</a></li>
+                <li><a href="./inputs1.html">HTML Input → Typy</a></li>
+                <li><a href="./inputs2.html">HTML Input → Atribúty</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="my-h1">Zoznamy</h1>
+            <div class="status-bar">
+                <div class="controlls">
+                    <div id="previous-controll" class="controll"><p>&lt;</p></div>
+                    <div id="next-controll" class="controll"><p>&gt;</p></div>
+                </div>
+                <div></div>
+                <div class="try-it-out">
+                    <button target="_blank" id="try-it" class="try-button">Vyskúšaj si to</button>
+                </div>
+            </div>
+            <div class="article">
+                <h2>Typy zoznamov:</h2>
+                <ul class="article-ul">
+                    <li>Očíslovaný zoznam</li>
+                    <li>Neočíslovaný zoznam</li>
+                    <li>Opisný zoznam</li>
+                </ul>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>Neočíslovaný zoznam</h1>
+            <div class="article">
+                <h4>Neočíslovaný zoznam sa začína <span class="dif">&lt;ul&gt;</span> tagom</h4>
+                <h4>Každý prvok zoznamu začína <span class="dif">&lt;li&gt;</span> tagom</h4>
+            </div>
+            <div class="article">
+                <h4>Pri neočíslovanom zozname môžeme pomocou CSS nastaviť:</h4>
+                <ul class="article-ul">
+                    <li>list-style-type:disc</li>
+                    <li>list-style-type:circle</li>
+                    <li>list-style-type:square</li>
+                    <li>list-style-type:none</li>
+                </ul>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+
+                &nbsp;&nbsp;ul {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="dif">list-style-type: square</span><br>    
+                &nbsp;&nbsp;}<br>
+
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                <span class="dif">&lt;ul&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
+                <span class="dif">&lt;/ul&gt;</span><br>
+                &lt;/body&gt;<br>
+            </div>
+            
+
+            <div class="medzera"></div>
+            <h1>Očíslovaný zoznam</h1>
+            <div class="article">
+                <h4>Očíslovaný zoznam sa začína <span class="dif">&lt;ol&gt;</span> tagom</h4>
+                <h4>Každý prvok zoznamu začína <span class="dif">&lt;li&gt;</span> tagom</h4>
+                <h4>Pri očíslovanom zozname môžeme v začiatočnom tagu pridať atribút:</h4>
+                <ul class="article-ul">
+                    <li>type="1" → zoznam bude očívlovaný: {1, 2, 3,...}</li>
+                    <li>type="A" → zoznam bude očívlovaný: {A, B, C,...}</li>
+                    <li>type="a" → zoznam bude očívlovaný: {a, b, c,...}</li>
+                    <li>type="I" → zoznam bude očívlovaný: {I, II, III,...}</li>
+                    <li>type="i" → zoznam bude očívlovaný: {i, ii, iii,...}</li>
+                </ul>
+            </div>
+            
+                
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;ol <span class="dif">type="A"</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+            </div>
+            <div class="medzera"></div>
+            <div class="article">
+                <h4>Môžete nastaviť číslo, od ktorého bude zoznam počítať:</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;ol <span class="dif">start="50"</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>Opisný zoznam</h1>
+            <div class="article">
+                <h4>Opisný zoznam sa začína <span class="dif">&lt;dl&gt;</span> tagom</h4>
+                <h4>Každý prvok zoznamu začína <span class="dif">&lt;dt&gt;</span> alebo 
+                <span class="dif">&lt;dd&gt;</span> tagom</h4>
+                <h4><span class="dif">&lt;dt&gt;</span> = názov <br> <span class="dif">&lt;dd&gt;</span> = opis</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                <span class="dif">&lt;dl&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&lt;dt&gt;Káva&lt;/dt&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;dd&gt;- čierny horúci nápoj&lt;/dd&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;dt&gt;Mlieko&lt;/dd&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;dd&gt;- biely studený nápoj&lt;/dd&gt;<br>
+                <span class="dif">&lt;/dl&gt;</span><br>
+            </div>
+            
+
+
+
+            <div class="footer">
+                <button id="previous" class="previous-button">Späť</button>
+                <div></div>
+                <button id="next" class="next-button">Ďalej</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#previous").addEventListener("click", function () {
+            window.location.href = "./tables.html";
+        })
+        document.querySelector("#next").addEventListener("click", function () {
+            window.location.href = "./classes.html";
+        })
+        document.querySelector("#previous-controll").addEventListener("click", function () {
+            window.location.href = "./tables.html";
+        })
+        document.querySelector("#next-controll").addEventListener("click", function () {
+            window.location.href = "./classes.html";
+        })
+        document.querySelector("#try-it").addEventListener("click", function () {
+            window.open("./editor.html", "_blank")
+        })
+        var counter = 0;
+        document.querySelector("#burger").addEventListener("click", function () {
+            if (counter == 0) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out 1 show";
+                document.querySelector(".navbar").style.transform = "translate(0)";
+                counter = 1;
+            } else if (counter == 1) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out hide";
+                document.querySelector(".navbar").style.transform = "translate(-100%)";
+                counter = 0;
+            }
+        })
+    </script>
+</body>
+</html>

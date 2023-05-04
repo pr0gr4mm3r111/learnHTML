@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="semi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="index.css?v0">
+    
+    <title>HTML Input → Atribúty</title>
+</head>
+<body>
+    <div class="upper-status-bar">
+        <div id="burger" class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="navbar">
+            <ul>
+                <li><a href="./">HTML Základy</a></li>
+                <li><a href="./atributes.html">HTML Atribúty</a></li>
+                <li><a href="./headers.html">HTML Nadpisy</a></li>
+                <li><a href="./paragraphs.html">HTML Paragrafy</a></li>
+                <li><a href="./styles.html">HTML Štýly</a></li>
+                <li><a href="./formating.html">HTML Formátovanie</a></li>
+                <li><a href="./comments.html">HTML Komentáre</a></li>
+                <li><a href="./colors.html">HTML Farby</a></li>
+                <li><a href="./css.html">HTML CSS</a></li>
+                <li><a href="./links.html">HTML Linky</a></li>
+                <li><a href="./pictures.html">HTML Obrázky</a></li>
+                <li><a href="./favicons.html">HTML Favicon</a></li>
+                <li><a href="./title.html">HTML Názov Stránky</a></li>
+                <li><a href="./table.html">HTML Tabuľky</a></li>
+                <li><a href="./lists.html">HTML Listy</a></li>
+                <li><a href="./classes.html">HTML Triedy</a></li>
+                <li><a href="./id.html">HTML ID</a></li>
+                <li><a href="./layout.html">HTML Layout</a></li>
+                <li><a href="./entities.html">HTML Entities</a></li>
+                <li><a href="./emojis.html">HTML Emojis</a></li>
+                <li><a href="./forms1.html">HTML Formuláre 1</a></li>
+                <li><a href="./forms2.html">HTML Formuláre 2</a></li>
+                <li><a href="./inputs1.html">HTML Input → Typy</a></li>
+                <li><a href="./inputs2.html">HTML Input → Atribúty</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="my-h1">HTML Input → Atribúty</h1>
+            <div class="status-bar">
+                <div class="controlls">
+                    <div id="previous-controll" class="controll"><p>&lt;</p></div>
+                    <div id="next-controll" class="controll"><p>&gt;</p></div>
+                </div>
+                <div></div>
+                <div class="try-it-out">
+                    <button target="_blank" id="try-it" class="try-button">Vyskúšaj si to</button>
+                </div>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Readonly atribút</h2>
+            <div class="article">
+                <h4>→ Pri použití tohto atribútu nedokážeme do daného inputu zapisovať iba čítať</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &nbsp;&nbsp;&lt;input <span class="dif">readonly</span> type="text" id="myText" name="text"&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Disabled atribút</h2>
+            <div class="article">
+                <h4>→ Pri použití tohto atribútu sa daný input nedá používať</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &nbsp;&nbsp;&lt;input <span class="dif">disabled</span> type="text" id="myText" name="text"&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Size atribút</h2>
+            <div class="article">
+                <h4>→ Pri použití tohto atribútu určujeme počet znakov, ktorý sa do inputu vôjde</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &nbsp;&nbsp;&lt;input <span class="dif">size="50"</span> type="text" id="myText" name="text"&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Maxlength atribút</h2>
+            <div class="article">
+                <h4>→ Pri použití tohto atribútu určujeme najdlhší možný vstup</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &nbsp;&nbsp;&lt;input <span class="dif">maxlength="4"</span>size="4" type="text" id="myText" name="text"&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>min a max atribúty</h2>
+            <div class="article">
+                <h4>→ Pri použití týchto atribútov určujeme minimum a maximum pre vstup</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &nbsp;&nbsp;&lt;input <span class="dif">min="18" max="25"</span>size="4" type="number"&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Placeholder atribút</h2>
+            <div class="article">
+                <h4>→ Pri použití týchto atribútov určujeme prednastavenú hodnotu</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &nbsp;&nbsp;&lt;input <span class="dif">placeholder="hello"</span> type="text"&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Required  atribút</h2>
+            <div class="article">
+                <h4>→ Pri použití tohoto atribútu určujeme, že daný input musí byť vyplnený, aby sa údaje mohli odoslať</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;label for="username"&gt;Username:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="username" name="username" <span class="dif">required</span>&gt;<br>
+                &lt;/form&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>List atribút</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;input list="browsers"&gt;<br>
+                &nbsp;&nbsp;&lt;datalist id="browsers"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="Internet Explorer"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="Firefox"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="Chrome"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="Opera"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="Safari"&gt;<br>
+                &nbsp;&nbsp;&lt;/datalist&gt;<br>
+                &lt;/form&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <form>
+                    <input list="browsers">
+                    <datalist id="browsers">
+                      <option value="Internet Explorer">
+                      <option value="Firefox">
+                      <option value="Chrome">
+                      <option value="Opera">
+                      <option value="Safari">
+                    </datalist>
+                  </form>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Autocomplete  atribút</h2>
+            <div class="article">
+                <h4>→ Pri použití tohoto atribútu prehliadač ponúka hodnoty inputu</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;input type="text" id="username" name="username" <span class="dif">autocomplete="on"</span>&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                <input type="email" id="email" name="email" autocomplete="off"><br>
+            </div>
+            
+
+            <div class="footer">
+                <button id="previous" class="previous-button">Späť</button>
+                <div></div>
+                <button id="next" class="next-button">Ďalej</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#previous").addEventListener("click", function () {
+            window.location.href = "inputs1.html";
+        })
+        document.querySelector("#previous-controll").addEventListener("click", function () {
+            window.location.href = "inputs1.html";
+        })
+        document.querySelector("#try-it").addEventListener("click", function () {
+            window.open("editor.html", "_blank")
+        })
+
+        var counter = 0;
+        document.querySelector("#burger").addEventListener("click", function () {
+            if (counter == 0) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out 1 show";
+                document.querySelector(".navbar").style.transform = "translate(0)";
+                counter = 1;
+            } else if (counter == 1) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out hide";
+                document.querySelector(".navbar").style.transform = "translate(-100%)";
+                counter = 0;
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="semi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="index.css?v0">
+    
+    <title>Linky</title>
+</head>
+<body>
+    <div class="upper-status-bar">
+        <div id="burger" class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="navbar">
+            <ul>
+                <li><a href="./">HTML Základy</a></li>
+                <li><a href="./atributes.html">HTML Atribúty</a></li>
+                <li><a href="./headers.html">HTML Nadpisy</a></li>
+                <li><a href="./paragraphs.html">HTML Paragrafy</a></li>
+                <li><a href="./styles.html">HTML Štýly</a></li>
+                <li><a href="./formating.html">HTML Formátovanie</a></li>
+                <li><a href="./comments.html">HTML Komentáre</a></li>
+                <li><a href="./colors.html">HTML Farby</a></li>
+                <li><a href="./css.html">HTML CSS</a></li>
+                <li><a href="./links.html">HTML Linky</a></li>
+                <li><a href="./pictures.html">HTML Obrázky</a></li>
+                <li><a href="./favicons.html">HTML Favicon</a></li>
+                <li><a href="./title.html">HTML Názov Stránky</a></li>
+                <li><a href="./table.html">HTML Tabuľky</a></li>
+                <li><a href="./lists.html">HTML Listy</a></li>
+                <li><a href="./classes.html">HTML Triedy</a></li>
+                <li><a href="./id.html">HTML ID</a></li>
+                <li><a href="./layout.html">HTML Layout</a></li>
+                <li><a href="./entities.html">HTML Entities</a></li>
+                <li><a href="./emojis.html">HTML Emojis</a></li>
+                <li><a href="./forms1.html">HTML Formuláre 1</a></li>
+                <li><a href="./forms2.html">HTML Formuláre 2</a></li>
+                <li><a href="./inputs1.html">HTML Input → Typy</a></li>
+                <li><a href="./inputs2.html">HTML Input → Atribúty</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="my-h1">Linky</h1>
+            <div class="status-bar">
+                <div class="controlls">
+                    <div id="previous-controll" class="controll"><p>&lt;</p></div>
+                    <div id="next-controll" class="controll"><p>&gt;</p></div>
+                </div>
+                <div></div>
+                <div class="try-it-out">
+                    <button target="_blank" id="try-it" class="try-button">Vyskúšaj si to</button>
+                </div>
+            </div>
+            <div class="article">
+                <h4>→ používajú sa na presmerovanie na inú HTML stránku</h4>
+                <h4>→ link môže byť: text, obrázok, sekcia, určitá oblasť</h4>
+            </div>
+
+
+            <div class="medzera"></div>
+            <h1>Syntax</h1>
+            <div class="article">
+                <h4>→ <span class="dif">&lt;a&gt;</span> definuje link</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;a href="url"&gt;link text&lt;/a&gt;
+            </div>
+
+            <div class="medzera"></div>
+            <h1>Target atribút</h1>
+            <div class="article">
+                <h2>Target môže mať hodnotu:</h2>
+                <ul class="article-ul">
+                    <li><span>_self</span> - otvorí stránku v rovnakom okne</li>
+                    <li><span>_blank</span> - otvorí stránku v novom okne</li>
+                    <li><span>_parent</span> - otvorí stránku v rodičovskom okne</li>
+                    <li><span>_top</span> -  otvorí stránku v plnej šírke okna</li>
+                </ul>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;a <span class="dif">target="_blank"</span> href="url"&gt;link text&lt;/a&gt;
+            </div>
+
+            <div class="medzera"></div>
+            <h1>Paragraf ako link</h1>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;p&gt;&lt;a target="_blank" href="url"&gt;Tento text je vložený&lt;/a&gt;&lt;/p&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>Obrázok ako link</h1>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;a target="_blank" href="url"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="picture" src="my_picture.jpg"&gt;<br>
+                &lt;/a&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>Odkaz na e-mailovú adresu</h1>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;
+            </div>
+
+            <div class="medzera"></div>
+            <h1>Tlačítko ako odkaz</h1>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+            </div>
+
+            <div class="medzera"></div>
+            <h1>Title odkazu</h1>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;button onclick="document.location='index.html'" title="Toto je odkaz"&gt;HTML Tutorial&lt;/button&gt;
+            </div>
+
+
+            <div class="medzera"></div>
+            <h1>Štádia odkazov</h1>
+            <div class="article">
+                <h4>→ <span class="dif">:link</span> → definuje ako link vyzerá na stránke</h4>
+                <h4>→ <span class="dif">:hover</span> → definuje ako link vyzerá, keď prejdeme cezeň kurzorom</h4>
+                <h4>→ <span class="dif">:active</span> → definuje ako link vyzerá, keď naň klikneme</h4>
+                <h4>→ <span class="dif">:visited</span> → definuje ako link vyzerá na stránke</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//styles.css</p>
+                <p>
+                    a:link {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;background-color: transparent;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+                      }<br>
+                      
+                      a:visited {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: pink;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;background-color: transparent;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+                      }<br>
+                      
+                      a:hover {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;background-color: transparent;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline;<br>
+                      }<br>
+                      
+                      a:active {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: yellow;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;background-color: transparent;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline;<br>
+                      }<br>
+                </p>
+            </div>
+            
+
+
+            <div class="medzera"></div>
+            <h1>Záložka</h1>
+            <div class="article">
+                <h4>→ Ak pridáme <span class="dif">id</span> prvku, tak sa naň môžeme odvolávať odkazom</h4>
+                <h4>→ Dokument musí byť rozsiahlejší, aby sme videli, že nás daný link naozaj odkazuje na prvok s <span class="dif">id</span></h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;h2 id="C4"&gt;HTML Tutorial&lt;/h2&gt;<br>
+                ...<br>
+                &lt;a href="#C4"&gt;Odkaz na HTML Tutorial&lt;/a&gt;
+            </div>
+            
+            
+
+            <div class="article">
+                <h2>Zhrnutie</h2>
+                <ul class="article-ul">
+                    <li><span>&lt;a&gt;</span> definuje link=odkaz</li>
+                    <li><span>href</span> upresňuje adresu odkazu</li>
+                    <li><span>target</span> upresňuje, kde sa má daný obsah zobraziť</li>
+                    <li><span>mailto: adresa@gmail.com</span> v <span class="dif">href</span> atribúte otvorí užívateľov mail</li>
+                </ul>
+            </div>
+
+
+            
+            <div class="footer">
+                <button id="previous" class="previous-button">Späť</button>
+                <div></div>
+                <button id="next" class="next-button">Ďalej</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#previous").addEventListener("click", function () {
+            window.location.href = "./css.html";
+        })
+        document.querySelector("#next").addEventListener("click", function () {
+            window.location.href = "./pictures.html";
+        })
+        document.querySelector("#previous-controll").addEventListener("click", function () {
+            window.location.href = "./css.html";
+        })
+        document.querySelector("#next-controll").addEventListener("click", function () {
+            window.location.href = "./pictures.html";
+        })
+        document.querySelector("#try-it").addEventListener("click", function () {
+            window.open("./editor.html", "_blank")
+        })
+
+        var counter = 0;
+        document.querySelector("#burger").addEventListener("click", function () {
+            if (counter == 0) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out 1 show";
+                document.querySelector(".navbar").style.transform = "translate(0)";
+                counter = 1;
+            } else if (counter == 1) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out hide";
+                document.querySelector(".navbar").style.transform = "translate(-100%)";
+                counter = 0;
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="semi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="index.css?v0">
+    
+    <title>HTML Input → Typy</title>
+</head>
+<body>
+    <div class="upper-status-bar">
+        <div id="burger" class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="navbar">
+            <ul>
+                <li><a href="./">HTML Základy</a></li>
+                <li><a href="./atributes.html">HTML Atribúty</a></li>
+                <li><a href="./headers.html">HTML Nadpisy</a></li>
+                <li><a href="./paragraphs.html">HTML Paragrafy</a></li>
+                <li><a href="./styles.html">HTML Štýly</a></li>
+                <li><a href="./formating.html">HTML Formátovanie</a></li>
+                <li><a href="./comments.html">HTML Komentáre</a></li>
+                <li><a href="./colors.html">HTML Farby</a></li>
+                <li><a href="./css.html">HTML CSS</a></li>
+                <li><a href="./links.html">HTML Linky</a></li>
+                <li><a href="./pictures.html">HTML Obrázky</a></li>
+                <li><a href="./favicons.html">HTML Favicon</a></li>
+                <li><a href="./title.html">HTML Názov Stránky</a></li>
+                <li><a href="./table.html">HTML Tabuľky</a></li>
+                <li><a href="./lists.html">HTML Listy</a></li>
+                <li><a href="./classes.html">HTML Triedy</a></li>
+                <li><a href="./id.html">HTML ID</a></li>
+                <li><a href="./layout.html">HTML Layout</a></li>
+                <li><a href="./entities.html">HTML Entities</a></li>
+                <li><a href="./emojis.html">HTML Emojis</a></li>
+                <li><a href="./forms1.html">HTML Formuláre 1</a></li>
+                <li><a href="./forms2.html">HTML Formuláre 2</a></li>
+                <li><a href="./inputs1.html">HTML Input → Typy</a></li>
+                <li><a href="./inputs2.html">HTML Input → Atribúty</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="my-h1">HTML Input → Typy</h1>
+            <div class="status-bar">
+                <div class="controlls">
+                    <div id="previous-controll" class="controll"><p>&lt;</p></div>
+                    <div id="next-controll" class="controll"><p>&gt;</p></div>
+                </div>
+                <div></div>
+                <div class="try-it-out">
+                    <button target="_blank" id="try-it" class="try-button">Vyskúšaj si to</button>
+                </div>
+            </div>
+
+
+            <h2>→ Prehľad všetkých input typov:</h2>
+            <div class="article">
+                <table>
+                    <tr>
+                      <td style="height: 29px">&lt;input type="button"&gt;</td>
+                      <td style="height: 29px">&lt;input type="checkbox"&gt;</td>     
+                    </tr>
+                    <tr>
+                        <td style="height: 29px">&lt;input type="color"&gt;</td>
+                        <td style="height: 29px">&lt;input type="date"&gt;</td>    
+                      </tr>
+                      <tr>
+                        <td style="height: 29px">&lt;input type="datetime-local"&gt;</td>
+                        <td style="height: 29px">&lt;input type="file"&gt;</td>    
+                      </tr>
+                      <tr>
+                        <td style="height: 29px">&lt;input type="hidden"&gt;</td>
+                        <td style="height: 29px">&lt;input type="image"&gt;</td>    
+                      </tr>
+                      <tr>
+                        <td style="height: 29px">&lt;input type="month"&gt;</td>
+                        <td style="height: 29px">&lt;input type="number"&gt;</td>   
+                      </tr>
+                      <tr>
+                        <td style="height: 29px">&lt;input type="password"&gt;</td>
+                        <td style="height: 29px">&lt;input type="radio"&gt;</td>    
+                      </tr>
+                      <tr>
+                        <td style="height: 29px">&lt;input type="range"&gt;</td>
+                        <td style="height: 29px">&lt;input type="reset"&gt;</td>    
+                      </tr>
+                      <tr>
+                        <td style="height: 29px">&lt;input type="search"&gt;</td>
+                        <td style="height: 29px">&lt;input type="submit"&gt;</td>    
+                      </tr>
+                      <tr>
+                        <td style="height: 29px">&lt;input type="tel"&gt;</td>
+                        <td style="height: 29px">&lt;input type="text"&gt;</td>    
+                      </tr>
+                      <tr>
+                        <td style="height: 29px">&lt;input type="url"&gt;</td>
+                        <td style="height: 29px">&lt;input type="week"&gt;</td>    
+                      </tr>
+                </table>
+            </div>
+
+
+            <div class="medzera"></div>
+            <h2>Input Type Text</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;label for="fname"&gt;First name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="fname" name="fname"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="lname"&gt;Last name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="lname" name="lname"&gt;<br>
+                &lt;/form&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Input Type Password</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;label for="username"&gt;Username:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="username" name="username"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="pwd"&gt;Password:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="password" id="pwd" name="pwd"&gt;<br>
+                &lt;/form&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <form>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd">
+                </form>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Input Type Submit</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form action="/source/action_page.php" method="get"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="fname"&gt;First name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="fname" name="fname" value="John"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="lname"&gt;Last name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="lname" name="lname" value="Doe"&gt;<br>
+                &nbsp;&nbsp;&lt;input <span class="dif">type="submit"</span> value="Submit"&gt;<br>
+                &lt;/form&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <form action="" method="get">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Input Type Reset</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form action="/action_page.php"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="fname"&gt;First name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="fname" name="fname" value="John"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="lname"&gt;Last name:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" id="lname" name="lname" value="Doe"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="reset"&gt;<br>
+                &lt;/form><br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <form action="" method="get">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </form>
+            </div>
+
+
+            <div class="medzera"></div>
+            <h2>Input Type Radio</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;p&gt;Vyber si obľúbený programovací jazyk:&lt;/p&gt;<br>
+
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;input <span class="dif">type="radio"</span> id="html" name="fav_language" value="HTML"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="html"&gt;HTML&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input <span class="dif">type="radio"</span> id="css" name="fav_language" value="CSS"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="css"&gt;CSS&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input <span class="dif">type="radio"</span> id="javascript" name="fav_language" value="JavaScript"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="javascript"&gt;JavaScript&lt;/label&gt;<br>
+                &lt;/form><br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <p>Vyber si obľúbený programovací jazyk:</p>
+
+                <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                </form>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Input Type Checkbox</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;p&gt;Vyber si obľúbený programovací jazyk:&lt;/p&gt;<br>
+
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;input <span class="dif">type="checkbox"</span> id="vehicle1" name="vehicle1" value="Bike"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="vehicle1"&gt;HTML&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input <span class="dif">type="checkbox"</span> id="vehicle2" name="vehicle2" value="Car"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="vehicle2"&gt;CSS&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input <span class="dif">type="checkbox"</span> id="vehicle3" name="vehicle3" value="Boat"&gt;<br>
+                &nbsp;&nbsp;&lt;label for="vehicle3"&gt;JS&lt;/label&gt;<br>
+                &lt;/form&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <p>Vyber si obľúbený programovací jazyk:</p>
+
+                <form>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">HTML</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">CSS</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3">JS</label>
+                </form>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Input Type Button</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;input <span class="dif">type="button"</span> onclick="alert('Hello World!')" value="Click Me!"&gt;
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Input Type Color</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;label for="favcolor"&gt;Select your favorite color:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input <span class="dif">type="color"</span> id="favcolor" name="favcolor"&gt;<br>
+                &lt;/form&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <form>
+                    <label for="favcolor">Select your favorite color:</label>
+                    <input type="color" id="favcolor" name="favcolor">
+                </form>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Input Type Date</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;label for="birthday"&gt;Birthday:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type="date" id="birthday" name="birthday"&gt;<br>
+                &lt;/form&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <form>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </form>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Input Type Number</h2>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;form&gt;
+                    &lt;label for="quantity"&gt;Quantity (between 1 and 5):&lt;/label&gt;
+                    &lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;
+                &lt;/form&gt;
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <form>
+                    <label for="quantity">Quantity (between 1 and 5):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </form>
+            </div>
+
+            <div class="footer">
+                <button id="previous" class="previous-button">Späť</button>
+                <div></div>
+                <button id="next" class="next-button">Ďalej</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#previous").addEventListener("click", function () {
+            window.location.href = "./forms2.html";
+        })
+        document.querySelector("#next").addEventListener("click", function () {
+            window.location.href = "./inputs2.html";
+        })
+        document.querySelector("#previous-controll").addEventListener("click", function () {
+            window.location.href = "./forms2.html";
+        })
+        document.querySelector("#next-controll").addEventListener("click", function () {
+            window.location.href = "./inputs2.html";
+        })
+        document.querySelector("#try-it").addEventListener("click", function () {
+            window.open("./editor.html", "_blank")
+        })
+
+        var counter = 0;
+        document.querySelector("#burger").addEventListener("click", function () {
+            if (counter == 0) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out 1 show";
+                document.querySelector(".navbar").style.transform = "translate(0)";
+                counter = 1;
+            } else if (counter == 1) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out hide";
+                document.querySelector(".navbar").style.transform = "translate(-100%)";
+                counter = 0;
+            }
+        })
+    </script>
+</body>
+</html>

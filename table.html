@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="semi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="index.css?v0">
+    
+    <title>Tabuľky</title>
+</head>
+<body>
+    <div class="upper-status-bar">
+        <div id="burger" class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="navbar">
+            <ul>
+                <li><a href="./">HTML Základy</a></li>
+                <li><a href="./atributes.html">HTML Atribúty</a></li>
+                <li><a href="./headers.html">HTML Nadpisy</a></li>
+                <li><a href="./paragraphs.html">HTML Paragrafy</a></li>
+                <li><a href="./styles.html">HTML Štýly</a></li>
+                <li><a href="./formating.html">HTML Formátovanie</a></li>
+                <li><a href="./comments.html">HTML Komentáre</a></li>
+                <li><a href="./colors.html">HTML Farby</a></li>
+                <li><a href="./css.html">HTML CSS</a></li>
+                <li><a href="./links.html">HTML Linky</a></li>
+                <li><a href="./pictures.html">HTML Obrázky</a></li>
+                <li><a href="./favicons.html">HTML Favicon</a></li>
+                <li><a href="./title.html">HTML Názov Stránky</a></li>
+                <li><a href="./table.html">HTML Tabuľky</a></li>
+                <li><a href="./lists.html">HTML Listy</a></li>
+                <li><a href="./classes.html">HTML Triedy</a></li>
+                <li><a href="./id.html">HTML ID</a></li>
+                <li><a href="./layout.html">HTML Layout</a></li>
+                <li><a href="./entities.html">HTML Entities</a></li>
+                <li><a href="./emojis.html">HTML Emojis</a></li>
+                <li><a href="./forms1.html">HTML Formuláre 1</a></li>
+                <li><a href="./forms2.html">HTML Formuláre 2</a></li>
+                <li><a href="./inputs1.html">HTML Input → Typy</a></li>
+                <li><a href="./inputs2.html">HTML Input → Atribúty</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="my-h1">Tabuľky</h1>
+            <div class="status-bar">
+                <div class="controlls">
+                    <div id="previous-controll" class="controll"><p>&lt;</p></div>
+                    <div id="next-controll" class="controll"><p>&gt;</p></div>
+                </div>
+                <div></div>
+                <div class="try-it-out">
+                    <button target="_blank" id="try-it" class="try-button">Vyskúšaj si to</button>
+                </div>
+            </div>
+            <div class="article">
+                <h4>→ Tabuľky umožňujú programátorovi vkladať dáta do stĺpcov a riadkov</h4>
+            </div>
+            
+            <div class="medzera"></div>
+            <h2>Tabuľka</h2>
+            <h4><span class="dif">&lt;table&gt;</span> definuje tabuľku na HTML stránke</h4>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                <span class="dif">&lt;table&gt;</span><br>
+                ... <br>
+                <span class="dif">&lt;/table&gt;<br></span>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Bunka tabuľky</h2>
+            <h4><span class="dif">&lt;td&gt;</span> definuje bunku tabuľky</h4>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                <span class="dif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Bunka&lt;/td&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Riadok tabuľky</h2>
+            <h4><span class="dif">&lt;tr&gt;</span> definuje riadok tabuľky</h4>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;table&gt;<br>
+                <span class="dif">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Bunka&lt;/td&gt;<br>
+                <span class="dif">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</span><br>
+                &lt;/table&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Hlavička tabuľky</h2>
+            <h4><span class="dif">&lt;tr&gt;</span> definuje hlavičku tabuľky</h4>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                <span class="dif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Bunka&lt;/th&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;<br>
+            </div>
+
+            <div class="medzera"></div>
+            <h2>Pridanie ohraničenia tabuľky</h2>
+            <div class="outlook">
+                <p class="outlook-p">//styles.css</p>
+                <p>
+                    table, th, td {<br>
+                    &nbsp;&nbsp;&nbsp;border: 1px solid black;<br>
+                    &nbsp;&nbsp;&nbsp;border-collapse: collapse;<br>
+                    }<br>
+                </p>
+            </div>
+            <div class="tip-div">
+                <p><strong>❕ border-collapse</strong> je nevyhnutné pridať, inak vzhľad tabuľky bude iný</p>
+            </div>
+
+
+            <div class="footer">
+                <button id="previous" class="previous-button">Späť</button>
+                <div></div>
+                <button id="next" class="next-button">Ďalej</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#previous").addEventListener("click", function () {
+            window.location.href = "./title.html";
+        })
+        document.querySelector("#next").addEventListener("click", function () {
+            window.location.href = "./lists.html";
+        })
+        document.querySelector("#previous-controll").addEventListener("click", function () {
+            window.location.href = "./title.html";
+        })
+        document.querySelector("#next-controll").addEventListener("click", function () {
+            window.location.href = "./lists.html";
+        })
+        document.querySelector("#try-it").addEventListener("click", function () {
+            window.open("./editor.html", "_blank")
+        })
+ 
+        var counter = 0;
+        document.querySelector("#burger").addEventListener("click", function () {
+            if (counter == 0) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out 1 show";
+                document.querySelector(".navbar").style.transform = "translate(0)";
+                counter = 1;
+            } else if (counter == 1) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out hide";
+                document.querySelector(".navbar").style.transform = "translate(-100%)";
+                counter = 0;
+            }
+        })
+    </script>
+</body>
+</html>
