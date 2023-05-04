@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="semi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="index.css?v0">
+    
+    <title>CSS</title>
+</head>
+<body>
+    <div class="upper-status-bar">
+        <div id="burger" class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="navbar">
+            <ul>
+                <li><a href="./">HTML Základy</a></li>
+                <li><a href="./atributes">HTML Atribúty</a></li>
+                <li><a href="./headers">HTML Nadpisy</a></li>
+                <li><a href="./paragraphs">HTML Paragrafy</a></li>
+                <li><a href="./styles">HTML Štýly</a></li>
+                <li><a href="./formating">HTML Formátovanie</a></li>
+                <li><a href="./comments">HTML Komentáre</a></li>
+                <li><a href="./colors">HTML Farby</a></li>
+                <li><a href="./css">HTML CSS</a></li>
+                <li><a href="./links">HTML Linky</a></li>
+                <li><a href="./pictures">HTML Obrázky</a></li>
+                <li><a href="./favicons">HTML Favicon</a></li>
+                <li><a href="./title">HTML Názov Stránky</a></li>
+                <li><a href="./table">HTML Tabuľky</a></li>
+                <li><a href="./lists">HTML Listy</a></li>
+                <li><a href="./classes">HTML Triedy</a></li>
+                <li><a href="./id">HTML ID</a></li>
+                <li><a href="./layout">HTML Layout</a></li>
+                <li><a href="./entities">HTML Entities</a></li>
+                <li><a href="./emojis">HTML Emojis</a></li>
+                <li><a href="./forms1">HTML Formuláre 1</a></li>
+                <li><a href="./forms2">HTML Formuláre 2</a></li>
+                <li><a href="./inputs1">HTML Input → Typy</a></li>
+                <li><a href="./inputs2">HTML Input → Atribúty</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="my-h1">CSS</h1>
+            <div class="status-bar">
+                <div class="controlls">
+                    <div id="previous-controll" class="controll"><p>&lt;</p></div>
+                    <div id="next-controll" class="controll"><p>&gt;</p></div>
+                </div>
+                <div></div>
+                <div class="try-it-out">
+                    <button target="_blank" id="try-it" class="try-button">Vyskúšaj si to</button>
+                </div>
+            </div>
+            <div class="article">
+                <h4>→ CSS = " Cascading Style Sheets "</h4>
+                <h4>→ Šetrí veľa práce, lebo upresňuje štýly pre viacero prvkov</h4>
+            </div>
+
+            <div class="article">
+                <h2>Možnosti pridania CSS do HTML stránky</h2>
+                <ul class="article-ul">
+                    <li><a href="#inline" class="my-link"><strong>Inline</strong></a> 
+                        → pridaním <span class="dif">style</span> atribútu danému prvku</li>
+                    <li><a href="#internal" class="my-link"><strong>Internal</strong></a>
+                        → pridaním <span class="dif">&lt;style&gt;</span> prvku do hlavičky stránky</li>
+                    <li><a href="#external" class="my-link"><strong>External</strong></a>
+                        → pridaním <span class="dif">&lt;link&gt;</span> prvku do hlavičky</li>
+                </ul>
+            </div>
+
+            <div class="medzera"></div>
+            <h1 id="inline">Inline CSS</h1>
+            <div class="article">
+                <h4>→ Používa sa výhradne na stanovenie unikátnych štýlov pre jeden prvok</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;h1 <span class="dif">style="color:blue;"</span> &gt;A Blue Heading&lt;/h1&gt;<br>
+                &lt;p <span class="dif">style="color:red;"</span> &gt;A red paragraph.&lt;/p&gt;
+            </div>
+
+            <div class="medzera"></div>
+            <h1 id="internal">Internal CSS</h1>
+            <div class="article">
+                <h4>→ Používa sa na definovanie štýlov prvkov na jednej HTML stránke</h4>
+                <h4>→ Internal CSS sa uvádza vždy v <span class="dif">&lt;head&gt;</span> danej stránky</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                <span class="dif">
+                    &lt;style&gt;<br>
+                    &nbsp; h1 {color: blue;}<br>
+                    &nbsp; p {color: red;}<br>
+                    &lt;/style&gt;<br>
+                </span>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                <br>
+                &lt;h1&gt;My First Heading.&lt;/h1&gt;<br>
+                &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+                <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </div>
+
+
+            <div class="medzera"></div>
+            <h1 id="external">External CSS</h1>
+            <div class="article">
+                <h4>→ Používa sa na definovanie štýlov prvkov pre viacero HTML stránok</h4>
+                <h4>→ Odkaz na daný style sheet sa uvádza v <span class="dif">&lt;head&gt;</span> danej stránky</h4>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                    &nbsp;<span class="dif">&lt;link rel="stylesheet" href="styles.css"&gt;</span><br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                <br>
+                &lt;h1&gt;My First Heading.&lt;/h1&gt;<br>
+                &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+                <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//styles.css</p>
+                <p>
+                    p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    }<br>
+                    h1 {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: blue;<br>
+                    }<br>
+                </p>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>CSS syntax</h1>
+            <div class="outlook">
+                <p class="outlook-p">//styles.css</p>
+                <p>
+                    p {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-align: right;<br>
+                    }<br>
+                    h1 {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: blue;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 5rem;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: sans-serif;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+                    }<br>
+                </p>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>CSS komentáre</h1>
+            <div class="outlook">
+                <p class="outlook-p">//styles.css</p>
+                <p>
+                    <span class="dif">//</span>&nbsp;Toto je CSS komentár na jeden riadok<br>
+                    <span class="dif">
+                    /*</span><br>
+                    &nbsp;Toto je viacriadkový CSS komentár<br>
+                    <span class="dif">/*</span><br>
+                    
+                </p>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>CSS border</h1>
+            <div class="article">
+                <h4>border-type:</h4>
+                <ul class="article-ul">
+                    <li>dotted</li>
+                    <li>dashed</li>
+                    <li>solid</li>
+                    <li>double</li>
+                    <li>groove</li>
+                    <li>ridge</li>
+                    <li>inset</li>
+                    <li>outset</li>
+                    <li>none</li>
+                    <li>hidden</li>
+                </ul>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                <p>
+                    &lt;head&gt;<br>
+                    &lt;style&gt;<br>
+                    p {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border-color: #008080;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border-width: 2px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border-style: solid<br>
+                        <span class="dif">&nbsp;&nbsp;&nbsp;&nbsp;//alebo</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #008080;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Tento text má okraje&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                </p>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <p style="border: 2px solid #008080">Tento text má okraje</p>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>CSS padding</h1>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                <p>
+                    &lt;head&gt;<br>
+                    &lt;style&gt;<br>
+                    p {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #008080;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;padding: 2rem;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Tento text má okraje a padding&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Tento text má okraje a padding&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Tento text má okraje a padding&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                </p>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <p style="border: 2px solid #008080; padding:2rem;">Tento text má okraje a padding</p>
+                <p style="border: 2px solid #008080; padding:2rem;">Tento text má okraje a padding</p>
+                <p style="border: 2px solid #008080; padding:2rem;">Tento text má okraje a padding</p>
+            </div>
+
+            <div class="medzera"></div>
+            <h1>CSS margins</h1>
+            <div class="outlook">
+                <p class="outlook-p">//index.html</p>
+                <p>
+                    &lt;head&gt;<br>
+                    &lt;style&gt;<br>
+                    p {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #008080;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;padding: 2rem;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;margin: 3rem;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Tento text má okraje, paddings a margins&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Tento text má okraje, paddings a margins&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Tento text má okraje, paddings a margins&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                </p>
+            </div>
+            <div class="outlook">
+                <p class="outlook-p">//output</p>
+                <p style="border: 2px solid #008080; padding:2rem; margin:3rem;">Tento text má okraje, paddings a margins</p>
+                <p style="border: 2px solid #008080; padding:2rem; margin:3rem;">Tento text má okraje, paddings a margins</p>
+                <p style="border: 2px solid #008080; padding:2rem; margin:3rem;">Tento text má okraje, paddings a margins</p>
+            </div>
+
+
+            <div class="article">
+                <h2>Zhrnutie</h2>
+                <ul class="article-ul">
+                    <li><span>style</span> atribút definuje inline CSS</li>
+                    <li><span>&lt;style&gt;</span> definuje internal CSS </li>
+                    <li><span>&lt;link&gt;</span> odkazuje na external CSS súbor</li>
+                    <li><span>&lt;head&gt;</span>  obsahuje &lt;link&gt; a &lt;style&gt; elements</li>
+                    <li><span>&lt;color &gt;</span>  mení farbu textu</li>
+                    <li><span>&lt;font-family&gt;</span>  upravuje štýl textu</li>
+                    <li><span>&lt;del&gt;</span>  odstránený text</li>
+                    <li><span>&lt;border&gt;</span>  definuje ohraničenie</li>
+                    <li><span>&lt;padding&gt;</span>  definuje veľkosť miesta od prvku po ohraničenie</li>
+                    <li><span>&lt;margin&gt;</span>  definuje vzdialenosť medzi jednotlivými prvkami</li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <button id="previous" class="previous-button">Späť</button>
+                <div></div>
+                <button id="next" class="next-button">Ďalej</button>
+            </div>
+
+    </div>
+    <script>
+        document.querySelector("#previous").addEventListener("click", function () {
+            window.location.href = "./colors";
+        })
+        document.querySelector("#next").addEventListener("click", function () {
+            window.location.href = "./links";
+        })
+        document.querySelector("#previous-controll").addEventListener("click", function () {
+            window.location.href = "./colors";
+        })
+        document.querySelector("#next-controll").addEventListener("click", function () {
+            window.location.href = "./links";
+        })
+        document.querySelector("#try-it").addEventListener("click", function () {
+            window.open("./editor", "_blank")
+        })
+
+        
+        var counter = 0;
+        document.querySelector("#burger").addEventListener("click", function () {
+            if (counter == 0) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out 1 show";
+                document.querySelector(".navbar").style.transform = "translate(0)";
+                counter = 1;
+            } else if (counter == 1) {
+                document.querySelector(".navbar").style.animation = "0.5s ease-in-out hide";
+                document.querySelector(".navbar").style.transform = "translate(-100%)";
+                counter = 0;
+            }
+        })
+    </script>
+</body>
+</html>
