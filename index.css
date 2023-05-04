@@ -6,6 +6,9 @@ body, html {
     background-color: #222222;
     color:rgba(255, 255, 255, 0.5);
 }
+.lower-text {
+    font-size: 0.7rem;
+}
 .content {
     width: 100%;
 }
@@ -44,7 +47,7 @@ h3 {
     color: #008080;
 }
 ol {
-    padding: 0rem 4rem;
+    padding: 0rem 2rem;
 }
 ol > li {
     padding: 1rem;
@@ -56,10 +59,6 @@ ol > li {
 ::selection {
     background-color: #515151;
     color: #ffffff;
-}
-.row {
-    display: grid;
-    grid-template-columns: 15rem calc(100% - 15rem);
 }
 /*status bar*/
 .status-bar {
@@ -130,12 +129,7 @@ ol > li {
 
 
 /*layout*/
-.row {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 15rem calc(100% - 15rem);
-}
+
 
 .navbar, .content {
     box-sizing: border-box;
@@ -147,9 +141,20 @@ ol > li {
 .navbar, .content {
     overflow-y: scroll;
 }
+.navbar {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    background: #323232;
+    transform: translateX(-100%);
+    opacity: 1;
+    overflow-x: hidden;
+    border-right: 2px solid #008080;
+}
 .navbar > ul {
     list-style-type: none;
     padding: 0;
+    width: 100%;
 }
 
 .navbar > ul > li {
@@ -157,6 +162,9 @@ ol > li {
     margin: 0.2rem 1rem 0.2rem 1rem;
     border-radius: 10px;
     transition: 0.3s;
+    width: 10rem;
+    height: 1.7rem;
+    display: inline-block;
 }
 .navbar > ul > li:hover {
     background-color: #323232;
@@ -171,7 +179,48 @@ ol > li {
     cursor: pointer;
 }
 
+@keyframes  show{
+    0% {
+        transform: translateX(-100%);
+    }
+    20% {
+       transform: translateX(-80%);
+    }
+    40% {
+        transform: translateX(-60%);
+    }
+    60% {
+        transform: translateX(-40%);
+    }
+    80% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
+
+@keyframes  hide{
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+       transform: translateX(-20%);
+    }
+    40% {
+        transform: translateX(-40%);
+    }
+    60% {
+        transform: translateX(-60%);
+    }
+    80% {
+        transform: translateX(-80%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 /*scrollbar*/
 
@@ -371,6 +420,15 @@ ol > li {
     height: 5rem;
     border: 1px solid white;
 }
+@media screen and (max-width: 1177px) {
+    .color-sample, .colors-element {
+        width: 100%;
+    }
+    .color-sample {
+        grid-template-columns: repeat(2, 50%);
+        gap: 1rem;
+    }
+}
 
 /*tip*/
 .tip-div {
@@ -392,6 +450,7 @@ ol > li {
         width: 90%;
         padding: 0;
     }
+
 }
 @media screen and (max-width:990px) {
     
@@ -400,37 +459,16 @@ ol > li {
         grid-template-rows: 25rem 25rem;
     }
 }
-@media screen and (max-width: 768px) {
-    .navbar {
-        display: none;
-    }
-    .row {
+
+@media screen and (max-width: 540px) {
+    .status-bar {
         grid-template-columns: none;
     }
-    .status-bar {
-        grid-template-columns: 50% 0% 50%;
-    }
-}
-@media screen and (max-width: 540px) {
-    .controlls {
-        width: 8rem;
-        height: 3.5rem;
-        margin: 2rem;
-        padding: 0.2rem;
-        gap: 0.2rem;
-        grid-template-columns: repeat(2, 50%);
+    .try-it-out {
         place-content: center;
     }
-    .controll {
-        width: 2.2rem;
-        height: 2.2rem;
-        padding: 0.1rem 0 1.2rem 0;
-        display: grid;
-        place-items: center;
-        text-align: center;
-        font-family: cursive;
-        font-weight: 700;
-        font-size: 1.2rem;
+    .controlls {
+        display: none;
     }
     .try-button {
         width: 8rem;
@@ -485,14 +523,33 @@ ol > li {
     top: 1rem;
 }
 .burger {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 2px solid #008080;
+    cursor: pointer;
 }
 .bar {
     height: 4px;
     width: 80%;
     background-color: #008080;
     display: block;
-    margin: 0.3rem auto;
+    margin: 0.4rem auto;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    .navbar {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 907px) {
+    .navbar {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 755px) {
+    .navbar {
+        width: 50%;
+    }
 }
