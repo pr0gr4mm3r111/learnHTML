@@ -21,30 +21,30 @@
     <div class="row">
         <div class="navbar">
             <ul>
-                <li><a href="./">HTML Základy</a></li>
-                <li><a href="./atributes.html">HTML Atribúty</a></li>
-                <li><a href="./headers.html">HTML Nadpisy</a></li>
-                <li><a href="./paragraphs.html">HTML Paragrafy</a></li>
-                <li><a href="./styles.html">HTML Štýly</a></li>
-                <li><a href="./formating.html">HTML Formátovanie</a></li>
-                <li><a href="./comments.html">HTML Komentáre</a></li>
-                <li><a href="./colors.html">HTML Farby</a></li>
-                <li><a href="./css.html">HTML CSS</a></li>
-                <li><a href="./links.html">HTML Linky</a></li>
-                <li><a href="./pictures.html">HTML Obrázky</a></li>
-                <li><a href="./favicons.html">HTML Favicon</a></li>
-                <li><a href="./title.html">HTML Názov Stránky</a></li>
-                <li><a href="./table.html">HTML Tabuľky</a></li>
-                <li><a href="./lists.html">HTML Listy</a></li>
-                <li><a href="./classes.html">HTML Triedy</a></li>
-                <li><a href="./id.html">HTML ID</a></li>
-                <li><a href="./layout.html">HTML Layout</a></li>
-                <li><a href="./entities.html">HTML Entities</a></li>
-                <li><a href="./emojis.html">HTML Emojis</a></li>
-                <li><a href="./forms1.html">HTML Formuláre 1</a></li>
-                <li><a href="./forms2.html">HTML Formuláre 2</a></li>
-                <li><a href="./inputs1.html">HTML Input → Typy</a></li>
-                <li><a href="./inputs2.html">HTML Input → Atribúty</a></li>
+                <li><a href="index.html">HTML Základy</a></li>
+                <li><a href="atributes.html">HTML Atribúty</a></li>
+                <li><a href="headers.html">HTML Nadpisy</a></li>
+                <li><a href="paragraphs.html">HTML Paragrafy</a></li>
+                <li><a href="styles.html">HTML Štýly</a></li>
+                <li><a href="formating.html">HTML Formátovanie</a></li>
+                <li><a href="comments.html">HTML Komentáre</a></li>
+                <li><a href="colors.html">HTML Farby</a></li>
+                <li><a href="css.html">HTML CSS</a></li>
+                <li><a href="links.html">HTML Linky</a></li>
+                <li><a href="pictures.html">HTML Obrázky</a></li>
+                <li><a href="favicons.html">HTML Favicon</a></li>
+                <li><a href="title.html">HTML Názov Stránky</a></li>
+                <li><a href="table.html">HTML Tabuľky</a></li>
+                <li><a href="lists.html">HTML Listy</a></li>
+                <li><a href="classes.html">HTML Triedy</a></li>
+                <li><a href="id.html">HTML ID</a></li>
+                <li><a href="layout.html">HTML Layout</a></li>
+                <li><a href="entities.html">HTML Entities</a></li>
+                <li><a href="emojis.html">HTML Emojis</a></li>
+                <li><a href="forms1.html">HTML Formuláre 1</a></li>
+                <li><a href="forms2.html">HTML Formuláre 2</a></li>
+                <li><a href="inputs1.html">HTML Input → Typy</a></li>
+                <li><a href="inputs2.html">HTML Input → Atribúty</a></li>
             </ul>
         </div>
         <div class="content">
@@ -83,24 +83,34 @@
                     <li>list-style-type:none</li>
                 </ul>
             </div>
-            <div class="outlook">
-                <p class="outlook-p">//index.html</p>
-                &lt;head&gt;<br>
-                &lt;style&gt;<br>
-
-                &nbsp;&nbsp;ul {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="dif">list-style-type: square</span><br>    
-                &nbsp;&nbsp;}<br>
-
-                &lt;/style&gt;<br>
-                &lt;/head&gt;<br>
-                &lt;body&gt;<br>
-                <span class="dif">&lt;ul&gt;</span><br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
-                <span class="dif">&lt;/ul&gt;</span><br>
-                &lt;/body&gt;<br>
+            <div class="outlook-row">
+                <div class="outlook">
+                    <p class="outlook-p">//index.html</p>
+                    &lt;head&gt;<br>
+                    &lt;style&gt;<br>
+    
+                    &nbsp;&nbsp;ul {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="dif">list-style-type: square</span><br>    
+                    &nbsp;&nbsp;}<br>
+    
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    <span class="dif">&lt;ul&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
+                    <span class="dif">&lt;/ul&gt;</span><br>
+                    &lt;/body&gt;<br>
+                </div>
+                <div class="outlook">
+                    <p class="outlook-p">//output</p>
+                    <ul style="list-style-type: square;">
+                        <li>Káva</li>
+                        <li>Čaj</li>
+                        <li>Mlieko</li>
+                    </ul>
+                </div>
             </div>
             
 
@@ -119,26 +129,47 @@
                 </ul>
             </div>
             
-                
-            <div class="outlook">
-                <p class="outlook-p">//index.html</p>
-                &lt;ol <span class="dif">type="A"</span>&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
-                &lt;/ol&gt;<br>
+            
+            <div class="outlook-row">
+                <div class="outlook">
+                    <p class="outlook-p">//index.html</p>
+                    &lt;ol <span class="dif">type="A"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
+                    &lt;/ol&gt;<br>
+                </div>
+                <div class="outlook">
+                    <p class="outlook-p">//output</p>
+                    <ol type="A">
+                        <li>Káva</li>
+                        <li>Čaj</li>
+                        <li>Mlieko</li>
+                    </ol>
+                </div>
             </div>
+            
             <div class="medzera"></div>
             <div class="article">
                 <h4>Môžete nastaviť číslo, od ktorého bude zoznam počítať:</h4>
             </div>
-            <div class="outlook">
-                <p class="outlook-p">//index.html</p>
-                &lt;ol <span class="dif">start="50"</span>&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
-                &lt;/ol&gt;<br>
+            <div class="outlook-row">
+                <div class="outlook">
+                    <p class="outlook-p">//index.html</p>
+                    &lt;ol <span class="dif">start="50"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Káva&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Čaj&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;li&gt;Mlieko&lt;/li&gt;<br>
+                    &lt;/ol&gt;<br>
+                </div>
+                <div class="outlook">
+                    <p class="outlook-p">//output</p>
+                    <ol start="50">
+                        <li>Káva</li>
+                        <li>Čaj</li>
+                        <li>Mlieko</li>
+                    </ol>
+                </div>
             </div>
 
             <div class="medzera"></div>
@@ -149,14 +180,25 @@
                 <span class="dif">&lt;dd&gt;</span> tagom</h4>
                 <h4><span class="dif">&lt;dt&gt;</span> = názov <br> <span class="dif">&lt;dd&gt;</span> = opis</h4>
             </div>
-            <div class="outlook">
-                <p class="outlook-p">//index.html</p>
-                <span class="dif">&lt;dl&gt;</span><br>
-                &nbsp;&nbsp;&nbsp;&lt;dt&gt;Káva&lt;/dt&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;dd&gt;- čierny horúci nápoj&lt;/dd&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;dt&gt;Mlieko&lt;/dd&gt;<br>
-                &nbsp;&nbsp;&nbsp;&lt;dd&gt;- biely studený nápoj&lt;/dd&gt;<br>
-                <span class="dif">&lt;/dl&gt;</span><br>
+            <div class="outlook-row">
+                <div class="outlook">
+                    <p class="outlook-p">//index.html</p>
+                    <span class="dif">&lt;dl&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&lt;dt&gt;Káva&lt;/dt&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;dd&gt;- čierny horúci nápoj&lt;/dd&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;dt&gt;Mlieko&lt;/dd&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;dd&gt;- biely studený nápoj&lt;/dd&gt;<br>
+                    <span class="dif">&lt;/dl&gt;</span><br>
+                </div>
+                <div class="outlook">
+                    <p class="outlook-p">//output</p>
+                    <dl>
+                    <dt>Káva</dt>
+                    <dd>- čierny horúci nápoj</dd>
+                    <dt>Mlieko</dd>
+                    <dd>- biely studený nápoj</dd>
+                    </dl>
+                </div>
             </div>
             
 
@@ -171,13 +213,13 @@
     </div>
     <script>
         document.querySelector("#previous").addEventListener("click", function () {
-            window.location.href = "./tables.html";
+            window.location.href = "./table.html";
         })
         document.querySelector("#next").addEventListener("click", function () {
             window.location.href = "./classes.html";
         })
         document.querySelector("#previous-controll").addEventListener("click", function () {
-            window.location.href = "./tables.html";
+            window.location.href = "./table.html";
         })
         document.querySelector("#next-controll").addEventListener("click", function () {
             window.location.href = "./classes.html";

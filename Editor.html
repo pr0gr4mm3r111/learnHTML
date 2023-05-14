@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="semi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editor.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+    <title>Editor</title>
+</head>
+<body>
+
+
+        
+        <div class="row">
+                <div class="input-frame">
+                    <div contenteditable id="from-frame" class="input-frame-content">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Page Title&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;h1&gt;My First Heading.&lt;/h1&gt;<br>
+&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+                    </div>
+                </div>
+    
+                <div class="output-frame">
+                   <iframe id="to-frame"></iframe>
+                </div>
+        </div>
+
+    
+    <script>
+
+        const frameOne = document.querySelector("#from-frame");
+        const iframe = document.querySelector("#to-frame");
+        const button = document.querySelector("#frame-button");
+        
+        // button.addEventListener("click", function() {
+        //     var html = frameOne.textContent;
+        //     iframe.src = "data:text/html; charset=utf-8," + encodeURI(html);
+        // })
+
+
+        frameOne.addEventListener("keyup", function() {
+            var html = frameOne.textContent;
+            iframe.src = "data:text/html; charset=utf-8," + encodeURI(html);
+        })
+
+        frameOne.addEventListener('keydown', (event) => {
+        if (event.keyCode === 9) {
+            event.preventDefault();
+            // Insert tab character here
+            document.execCommand('insertHTML', false, '&#009');
+        }
+        });
+
+    </script>
+</body>
+</html>

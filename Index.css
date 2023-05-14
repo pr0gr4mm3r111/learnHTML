@@ -1,0 +1,591 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #222222;
+    color:rgba(255, 255, 255, 0.5);
+}
+.row {
+    padding-top: 5rem;
+}
+.lower-text {
+    font-size: 0.7rem;
+}
+.content {
+    width: 100%;
+    overflow-x: hidden;
+}
+h1, h2, h4 {
+    margin-inline: 2rem;
+}
+h3 {
+    font-weight: 800;
+}
+.my-h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+.topic-name {
+    color: #008080;
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 2rem 4rem;
+}
+.two-two {
+    display: grid;
+    grid-template-columns: 20rem calc(100% - 20rem);
+}
+.two-two > div > .article-ul {
+    font-size: 1.3rem;
+}
+.dif {
+    color: #008080;
+    font-weight: 700;
+}
+.reference-div {
+    width: 100%;
+    text-align: center;
+}
+.my-link {
+    color: #008080;
+}
+ol {
+    padding: 0rem 4rem;
+}
+ol > li {
+    padding: 1rem;
+}
+.medzera {
+    width: 100%;
+    height: 2rem;
+}
+::selection {
+    background-color: #515151;
+    color: #ffffff;
+}
+/*status bar*/
+.status-bar {
+    display: grid;
+    grid-template-columns: 15rem calc(100% - 30rem) 15rem;
+}
+
+.controlls {
+    width: 8rem;
+    height: 3.5rem;
+    box-sizing: border-box;
+    margin: 2rem;
+    padding: 0.2rem;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 50%);
+}
+.controll {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.1rem 0 1.2rem 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #008080;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid #515151;
+}
+.controll > p{
+    margin: 0;
+}
+.controll:hover {
+    background-color: #515151;
+    cursor: pointer;
+}
+
+.try-it-out {
+    margin: 2rem;
+    display: grid;
+    place-content: center flex-end;
+}
+.try-button {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #008080;
+    color:rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.try-button:hover {
+    background-color: #515151;
+    cursor: pointer;
+    color: #008080;
+}
+.try-button:active {
+    background-color: #008080;
+    color: #323232;
+}
+
+
+
+/*layout*/
+
+
+.navbar, .content {
+    box-sizing: border-box;
+}
+
+
+
+/*navbar*/
+.navbar, .content {
+    overflow-y: scroll;
+}
+.navbar {
+    height: 100%;
+    width: 18rem;
+    padding: 0 1rem 0 0; 
+    position: fixed;
+    z-index: 2;
+    background: #323232;
+    transform: translateX(-100%);
+    opacity: 1;
+    overflow-x: hidden;
+}
+.navbar > ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -1.7rem; 
+    width: 100%;
+}
+
+.navbar > ul > li {
+    padding: 0.7rem 0.7rem;
+    margin: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 10rem;
+    height: 1.7rem;
+    display: inline-block;
+}
+.navbar > ul > li:hover {
+    background-color: #323232;
+    color: #f9f9f9;
+} 
+.navbar > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.5);
+}
+.navbar > ul > li > a:hover {
+    cursor: pointer;
+}
+
+@keyframes  show{
+    0% {
+        transform: translateX(-100%);
+    }
+    20% {
+       transform: translateX(-80%);
+    }
+    40% {
+        transform: translateX(-60%);
+    }
+    60% {
+        transform: translateX(-40%);
+    }
+    80% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes  hide{
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+       transform: translateX(-20%);
+    }
+    40% {
+        transform: translateX(-40%);
+    }
+    60% {
+        transform: translateX(-60%);
+    }
+    80% {
+        transform: translateX(-80%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/*scrollbar*/
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #515151;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    padding: 0.5rem;
+}
+
+
+
+/*content*/
+.content {
+    padding: 2rem 3rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+/*outlook*/
+.outlook-row {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    place-content: center;
+}
+.outlook {
+    padding: 2rem 1rem;
+    margin: 2rem;
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: left;
+    background-color: #323232;
+    line-height: 2rem;
+    color: 	#ffffff;
+    box-sizing: border-box;
+    border-left: 1.2rem solid #008080;
+    word-spacing: 0.3rem; 
+    letter-spacing: 0.3px;
+}
+.outlook-only-one {
+    width: 45%;
+}
+
+.outlook-p {
+    margin: -1rem auto 2rem auto;
+    color: #008080;
+}
+
+/*article*/
+.article {
+    margin: 3rem 0rem;
+}
+.article-ul {
+    padding-left: 5rem; 
+}
+.article-ul > li {
+    margin-block: 0.3rem;
+}
+.article-ul > li > span {
+    color: #008080;
+}
+
+/*small-row*/
+.small-row {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.small-column {
+    box-sizing: border-box;
+    text-align: center;
+}
+.small-column > ul {
+    padding: 0;
+    list-style-type: none;
+    color: #008080;
+}
+
+
+
+
+/*structure html*/
+
+.ws-grey {
+    width:90%;
+    border:1px solid grey;
+    padding:5px;
+    margin: 0.3rem;
+}
+.w3-white {
+    width:90%;
+    border:1px solid grey;
+    padding:5px;
+    margin:20px;
+}
+.w3-other {
+    width:85%;
+    border:1px solid grey;
+    padding:5px;
+    margin:20px;
+}
+.ws-one {
+    width:90%;
+    border:1px solid grey;
+    padding:5px;
+    margin: 0.3rem;
+}
+.structure {
+    margin-inline: 2rem; 
+}
+
+
+/*footer*/
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 5rem calc(100% - 15rem) 5rem;
+    height: 5rem;
+    place-content: center;
+}
+.previous-button, .next-button{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #008080;
+    color:rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.previous-button:hover, .next-button:hover {
+    background-color: #515151;
+    cursor: pointer;
+    color: #008080;
+}
+
+.previous-button:active, .next-button:active {
+    background-color: #008080;
+    color: #323232;
+}
+
+
+/*article table*/
+.article > table {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0rem 2rem;
+    border-collapse: collapse;
+}
+.article > table > tbody > tr > th {
+    background-color: #323232;
+}
+.article > table > thead > tr > th, .article > table > tbody > tr > td, .article > table > tbody > tr > th {
+    border: 2px solid white; 
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+/*colors*/
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+}
+.colors-element {
+    width: 19%;
+    box-sizing: border-box;
+    margin: 2rem;
+    height: 10rem; 
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.sample-row {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    place-content: center;
+}
+.color-sample {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 12rem calc(100% - 12rem);
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid #008080;
+    padding: 1rem
+}
+.color {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid white;
+}
+@media screen and (max-width: 1177px) {
+    .color-sample, .colors-element {
+        width: 100%;
+    }
+    .color-sample {
+        grid-template-columns: repeat(2, 50%);
+        gap: 1rem;
+    }
+}
+
+/*tip*/
+.tip-div {
+    height: auto;margin: 2rem;
+    width: 77.3%;
+    background-color: #008080;
+    padding: 1rem;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+
+.img-div {
+    width:20rem;
+    padding: 0 2rem;
+}
+@media screen and (max-width:705px) {
+    .img-div {
+        width: 90%;
+        padding: 0;
+    }
+
+}
+@media screen and (max-width:990px) {
+    
+    .two-two {
+        grid-template-columns: none;
+        grid-template-rows: 25rem 25rem;
+    }
+    .outlook-row {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, auto);
+        margin: 1rem 0rem;
+    }
+    .content {
+        padding: 2rem 1rem;
+    }
+    .outlook-only-one {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .status-bar {
+        grid-template-columns: none;
+    }
+    .try-it-out {
+        place-content: center;
+    }
+    .controlls {
+        display: none;
+    }
+    .try-button {
+        width: auto;
+        min-width: 10rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+    .my-h1 {
+        font-size: 2rem;
+    }
+    .outlook-p {
+        margin: -1rem auto 2rem auto;
+        color: #008080;
+    }
+    h2, h3 {
+        margin-inline: 1rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .article-ul {
+        padding-left: 2rem;
+        width: 80%;
+    }
+    .structure {
+        margin-inline: 0rem; 
+    }
+    .w3-other {
+        padding:5px;
+        margin:20px 15px;
+    }
+    .w3-white {
+        padding:5px;
+        margin:20px 14px;
+    }
+    
+}
+
+/*burger*/
+.status-bar-row {
+    position: fixed;
+    height: 4rem;
+    width: 100%;
+    background-color: #008080;
+}
+.upper-status-bar {
+    position: fixed;
+    left: 0.7rem;
+    top: 0.7rem;
+    border-radius: 5px;
+}
+.burger {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.bar {
+    height: 4px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 0.4rem auto;
+    border-radius: 5px;
+}
+
+.burger2 {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: sticky;
+    top: 1rem;
+    left: 13.5rem;
+    border: 2px solid #008080;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.bar2 {
+    height: 4px;
+    width: 95%;
+    background-color: #008080;
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+}
+.bar2:nth-child(1) {
+    transform: rotate(45deg) translateY(0.8rem) translateX(0.9rem);
+}
+.bar2:nth-child(2) {
+    transform: rotate(-45deg) translateY(0.85rem) translateX(-0.8rem);
+}

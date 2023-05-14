@@ -21,30 +21,30 @@
     <div class="row">
         <div class="navbar">
             <ul>
-                <li><a href="./">HTML Základy</a></li>
-                <li><a href="./atributes.html">HTML Atribúty</a></li>
-                <li><a href="./headers.html">HTML Nadpisy</a></li>
-                <li><a href="./paragraphs.html">HTML Paragrafy</a></li>
-                <li><a href="./styles.html">HTML Štýly</a></li>
-                <li><a href="./formating.html">HTML Formátovanie</a></li>
-                <li><a href="./comments.html">HTML Komentáre</a></li>
-                <li><a href="./colors.html">HTML Farby</a></li>
-                <li><a href="./css.html">HTML CSS</a></li>
-                <li><a href="./links.html">HTML Linky</a></li>
-                <li><a href="./pictures.html">HTML Obrázky</a></li>
-                <li><a href="./favicons.html">HTML Favicon</a></li>
-                <li><a href="./title.html">HTML Názov Stránky</a></li>
-                <li><a href="./table.html">HTML Tabuľky</a></li>
-                <li><a href="./lists.html">HTML Listy</a></li>
-                <li><a href="./classes.html">HTML Triedy</a></li>
-                <li><a href="./id.html">HTML ID</a></li>
-                <li><a href="./layout.html">HTML Layout</a></li>
-                <li><a href="./entities.html">HTML Entities</a></li>
-                <li><a href="./emojis.html">HTML Emojis</a></li>
-                <li><a href="./forms1.html">HTML Formuláre 1</a></li>
-                <li><a href="./forms2.html">HTML Formuláre 2</a></li>
-                <li><a href="./inputs1.html">HTML Input → Typy</a></li>
-                <li><a href="./inputs2.html">HTML Input → Atribúty</a></li>
+                <li><a href="index.html">HTML Základy</a></li>
+                <li><a href="atributes.html">HTML Atribúty</a></li>
+                <li><a href="headers.html">HTML Nadpisy</a></li>
+                <li><a href="paragraphs.html">HTML Paragrafy</a></li>
+                <li><a href="styles.html">HTML Štýly</a></li>
+                <li><a href="formating.html">HTML Formátovanie</a></li>
+                <li><a href="comments.html">HTML Komentáre</a></li>
+                <li><a href="colors.html">HTML Farby</a></li>
+                <li><a href="css.html">HTML CSS</a></li>
+                <li><a href="links.html">HTML Linky</a></li>
+                <li><a href="pictures.html">HTML Obrázky</a></li>
+                <li><a href="favicons.html">HTML Favicon</a></li>
+                <li><a href="title.html">HTML Názov Stránky</a></li>
+                <li><a href="table.html">HTML Tabuľky</a></li>
+                <li><a href="lists.html">HTML Listy</a></li>
+                <li><a href="classes.html">HTML Triedy</a></li>
+                <li><a href="id.html">HTML ID</a></li>
+                <li><a href="layout.html">HTML Layout</a></li>
+                <li><a href="entities.html">HTML Entities</a></li>
+                <li><a href="emojis.html">HTML Emojis</a></li>
+                <li><a href="forms1.html">HTML Formuláre 1</a></li>
+                <li><a href="forms2.html">HTML Formuláre 2</a></li>
+                <li><a href="inputs1.html">HTML Input → Typy</a></li>
+                <li><a href="inputs2.html">HTML Input → Atribúty</a></li>
             </ul>
         </div>
         
@@ -68,46 +68,50 @@
             <div class="medzera"></div>
             <h2>Class atribút</h2>
             <h4>→ <span class="dif">class</span> atribút možno dať každému začiatočnému tagu</h4>
-            <div class="outlook">
-                <p class="outlook-p">//index.html</p>
-                &lt;a <span class="dif">class="my-link"</span> href="index.html" &gt;Navštív HTML kurz&lt;/a&gt;
-            </div>
             <h4>→ triedu v CSS vyjadrujeme <span class="dif">bodkou (.)</span> pred názvom triedy</h4>
-            <div class="outlook">
-                <p class="outlook-p">//styles.css</p>
-                <p>
-                    <span class="dif">.my-link </span>{<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;text-align: right;<br>
-                    }<br>
-                </p>
+            <div class="outlook-row">
+                <div class="outlook">
+                    <p class="outlook-p">//index.html</p>
+                    &lt;a <span class="dif">class="my-link"</span> href="index.html" &gt;Navštív HTML kurz&lt;/a&gt;
+                </div>
+                <div class="outlook">
+                    <p class="outlook-p">//styles.css</p>
+                    <p>
+                        <span class="dif">.my-link </span>{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text-align: right;<br>
+                        }<br>
+                    </p>
+                </div>
             </div>
 
             <div class="medzera"></div>
             <h2>Viaceré class atribúty</h2>
             <h4>→ Prvok môže mať viac tried naraz <span class="dif">(musia byť oddelené medzerou)!</span></h4>
-            <div class="outlook">
-                <p class="outlook-p">//index.html</p>
-                &lt;a <span class="dif">class="my-link main"</span> href="index.html" &gt;Navštív HTML kurz&lt;/a&gt;
-            </div>
-            <div class="outlook">
-                <p class="outlook-p">//styles.css</p>
-                <p>
-                    .my-link {<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;text-align: right;<br>
-                    }<br>
-                    .main {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;font-family: sans-serif<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;font-size: 2rem;<br>
+            <div class="outlook-row">
+                <div class="outlook">
+                    <p class="outlook-p">//index.html</p>
+                    &lt;a <span class="dif">class="my-link main"</span> href="index.html" &gt;Navštív HTML kurz&lt;/a&gt;
+                </div>
+                <div class="outlook">
+                    <p class="outlook-p">//styles.css</p>
+                    <p>
+                        .my-link {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;color: red;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text-align: right;<br>
                         }<br>
-                </p>
-                
+                        .main {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;font-family: sans-serif<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;font-size: 2rem;<br>
+                            }<br>
+                    </p>
+                    
+                </div>
             </div>
 
             <div class="medzera"></div>
             <h2>Class atribút môžu zdieľať viaceré prvky</h2>
-            <div class="outlook">
+            <div class="outlook ">
                 <p class="outlook-p">//index.html</p>
 
                 &lt;a <span class="dif">class="main"</span> href="index.html" &gt;Navštív HTML kurz&lt;/a&gt;<br>
@@ -127,19 +131,19 @@
     </div>
     <script>
         document.querySelector("#previous").addEventListener("click", function () {
-            window.location.href = "./lists";
+            window.location.href = "./lists.html";
         })
         document.querySelector("#next").addEventListener("click", function () {
-            window.location.href = "./id";
+            window.location.href = "./id.html";
         })
         document.querySelector("#previous-controll").addEventListener("click", function () {
-            window.location.href = "./lists";
+            window.location.href = "./lists.html";
         })
         document.querySelector("#next-controll").addEventListener("click", function () {
-            window.location.href = "./id";
+            window.location.href = "./id.html";
         })
         document.querySelector("#try-it").addEventListener("click", function () {
-            window.open("./editor", "_blank")
+            window.open("./editor.html", "_blank")
         })
         
         var counter = 0;
