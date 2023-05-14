@@ -480,7 +480,7 @@ ol > li {
     }
     .outlook {
         padding: 1rem 1.5rem;
-        margin: 1rem;
+        margin: 1rem 0rem;
         width: 90%;
         height: auto;
         font-size: 0.9rem;
