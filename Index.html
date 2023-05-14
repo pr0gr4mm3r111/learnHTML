@@ -11,42 +11,48 @@
     <title>Úvod</title>
 </head>
 <body>
-    <div class="upper-status-bar">
-        <div id="burger" class="burger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <div class="navbar">
+        <div id="burger2" class="burger2">
+            <span class="bar2"></span>
+            <span class="bar2"></span>
+        </div>
+        <ul>
+            <li><a href="index.html">HTML Základy</a></li>
+            <li><a href="atributes.html">HTML Atribúty</a></li>
+            <li><a href="headers.html">HTML Nadpisy</a></li>
+            <li><a href="paragraphs.html">HTML Paragrafy</a></li>
+            <li><a href="styles.html">HTML Štýly</a></li>
+            <li><a href="formating.html">HTML Formátovanie</a></li>
+            <li><a href="comments.html">HTML Komentáre</a></li>
+            <li><a href="colors.html">HTML Farby</a></li>
+            <li><a href="css.html">HTML CSS</a></li>
+            <li><a href="links.html">HTML Linky</a></li>
+            <li><a href="pictures.html">HTML Obrázky</a></li>
+            <li><a href="favicons.html">HTML Favicon</a></li>
+            <li><a href="title.html">HTML Názov Stránky</a></li>
+            <li><a href="table.html">HTML Tabuľky</a></li>
+            <li><a href="lists.html">HTML Listy</a></li>
+            <li><a href="classes.html">HTML Triedy</a></li>
+            <li><a href="id.html">HTML ID</a></li>
+            <li><a href="layout.html">HTML Layout</a></li>
+            <li><a href="entities.html">HTML Entities</a></li>
+            <li><a href="emojis.html">HTML Emojis</a></li>
+            <li><a href="forms1.html">HTML Formuláre 1</a></li>
+            <li><a href="forms2.html">HTML Formuláre 2</a></li>
+            <li><a href="inputs1.html">HTML Input → Typy</a></li>
+            <li><a href="inputs2.html">HTML Input → Atribúty</a></li>
+        </ul>
+    </div>
+    <div class="status-bar-row">
+        <div class="upper-status-bar">
+            <div id="burger" class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">HTML Základy</a></li>
-                <li><a href="atributes.html">HTML Atribúty</a></li>
-                <li><a href="headers.html">HTML Nadpisy</a></li>
-                <li><a href="paragraphs.html">HTML Paragrafy</a></li>
-                <li><a href="styles.html">HTML Štýly</a></li>
-                <li><a href="formating.html">HTML Formátovanie</a></li>
-                <li><a href="comments.html">HTML Komentáre</a></li>
-                <li><a href="colors.html">HTML Farby</a></li>
-                <li><a href="css.html">HTML CSS</a></li>
-                <li><a href="links.html">HTML Linky</a></li>
-                <li><a href="pictures.html">HTML Obrázky</a></li>
-                <li><a href="favicons.html">HTML Favicon</a></li>
-                <li><a href="title.html">HTML Názov Stránky</a></li>
-                <li><a href="table.html">HTML Tabuľky</a></li>
-                <li><a href="lists.html">HTML Listy</a></li>
-                <li><a href="classes.html">HTML Triedy</a></li>
-                <li><a href="id.html">HTML ID</a></li>
-                <li><a href="layout.html">HTML Layout</a></li>
-                <li><a href="entities.html">HTML Entities</a></li>
-                <li><a href="emojis.html">HTML Emojis</a></li>
-                <li><a href="forms1.html">HTML Formuláre 1</a></li>
-                <li><a href="forms2.html">HTML Formuláre 2</a></li>
-                <li><a href="inputs1.html">HTML Input → Typy</a></li>
-                <li><a href="inputs2.html">HTML Input → Atribúty</a></li>
-            </ul>
-        </div>
         <div class="content">
             <h1 class="my-h1">Základná štruktúra HTML stránky</h1>
             <div class="status-bar">
@@ -165,17 +171,13 @@
         })
         
 
-        var counter = 0;
         document.querySelector("#burger").addEventListener("click", function () {
-            if (counter == 0) {
-                document.querySelector(".navbar").style.animation = "0.5s ease-in-out 1 show";
-                document.querySelector(".navbar").style.transform = "translate(0)";
-                counter = 1;
-            } else if (counter == 1) {
-                document.querySelector(".navbar").style.animation = "0.5s ease-in-out hide";
-                document.querySelector(".navbar").style.transform = "translate(-100%)";
-                counter = 0;
-            }
+            document.querySelector(".navbar").style.animation = "0.5s ease-in-out 1 show";
+            document.querySelector(".navbar").style.transform = "translate(0)";
+        })
+        document.querySelector("#burger2").addEventListener("click", function () {
+            document.querySelector(".navbar").style.animation = "0.5s ease-in-out hide";
+            document.querySelector(".navbar").style.transform = "translate(-100%)";
         })
 
     </script>
